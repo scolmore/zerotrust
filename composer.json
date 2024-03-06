@@ -13,7 +13,7 @@
     "keywords": ["Laravel", "Zero Trust", "Azure", "Active Directory", "AD", "Middleware", "Security"],
     "require": {
         "php": "^8.2",
-        "illuminate/support": "~10",
+        "illuminate/support": "~10"
     },
     "require-dev": {
         "pestphp/pest": "^2.32",

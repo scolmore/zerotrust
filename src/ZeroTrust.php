@@ -149,8 +149,8 @@ class ZeroTrust
     {
         $domain = str($user['mail'])->after('@')->toString();
 
-        return ! ($this->directory['allowed_domains']
-            && ! in_array($domain, $this->directory['allowed_domains'], true));
+        return (! $this->directory['allowed_domains']
+            || ! in_array($domain, $this->directory['allowed_domains'], true));
     }
 
     public function logout(bool $site = true): RedirectResponse

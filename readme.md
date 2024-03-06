@@ -14,7 +14,7 @@ directory is added) or sent directly to the Microsoft login page.
 
 ## Setting up Microsoft Azure Active Directory
 
-To setup your Azure AD for use with this package, you can follow the following guide HERE from Microsoft.
+To setup your Azure AD for use with this package, you can follow the following guide [HERE][link-microsoft-setup] from Microsoft.
 
 For your callback URL, you will need to use `https://yourdomain.com/zero-trust/callback`.
 

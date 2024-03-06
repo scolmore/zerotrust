@@ -149,7 +149,7 @@ class ZeroTrust
     {
         $domain = str($user['mail'])->after('@')->toString();
 
-        if (! $this->directory['allowed_domains']) {
+        if (count($this->directory['allowed_domains']) === 0) {
             return true;
         }
 

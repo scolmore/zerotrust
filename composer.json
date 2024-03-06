@@ -1,0 +1,45 @@
+{
+    "name": "scolmore/zerotrust",
+    "description": "A package to add Azure active directory as a middleware security wrapper around your application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Loft",
+            "email": "sam@scolmore.com",
+            "homepage": "https://scolmore.com"
+        }
+    ],
+    "homepage": "https://github.com/scolmore/zero-trust",
+    "keywords": ["Laravel", "Zero Trust", "Azure", "Active Directory", "AD", "Middleware", "Security"],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "~10",
+        "illuminate/http": "^10.41",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.32",
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Scolmore\\ZeroTrust\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Scolmore\\ZeroTrust\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Scolmore\\ZeroTrust\\ZeroTrustServiceProvider"
+            ],
+            "aliases": {
+                "ZeroTrust": "Scolmore\\ZeroTrust\\Facades\\ZeroTrust"
+            }
+        }
+    }
+}

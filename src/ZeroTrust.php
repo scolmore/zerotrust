@@ -148,12 +148,13 @@ class ZeroTrust
     protected function checkRestrictions(array $user): bool
     {
         $domain = str($user['mail'])->after('@')->toString();
+        $allowedDomains = array_filter($this->directory['allowed_domains'], 'strlen');
 
-        if (count($this->directory['allowed_domains']) === 0) {
+        if (! $allowedDomains) {
             return true;
         }
 
-        return in_array($domain, $this->directory['allowed_domains'], true);
+        return in_array($domain, $allowedDomains, true);
     }
 
     public function logout(bool $site = true): RedirectResponse

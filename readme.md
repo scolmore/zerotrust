@@ -1,6 +1,8 @@
 # ZeroTrust
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
+[![GitHub Action Tests][ico-tests]][link-tests]
+[![GitHub Action Code Style][ico-style]][link-style]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Zero trust is a Laravel middleware that provides an authentication middleware wrapper for your enterprise application
@@ -146,15 +148,14 @@ If you discover any security related issues, please email sam@scolmore.com inste
 MIT. Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/scolmore/zerotrust.svg?style=flat-square
-
 [ico-downloads]: https://img.shields.io/packagist/dt/scolmore/zerotrust.svg?style=flat-square
+[ico-tests]: https://img.shields.io/github/actions/workflow/status/scolmore/zerotrust/run-tests.yml?label=tests&style=flat-square
+[ico-style]: https://img.shields.io/github/actions/workflow/status/scolmore/zerotrust/code-style.yml?label=code%20style&style=flat-square
 
 [link-packagist]: https://packagist.org/packages/scolmore/zerotrust
-
 [link-downloads]: https://packagist.org/packages/scolmore/zerotrust
-
 [link-author]: https://github.com/samloft
-
 [link-contributors]: https://github.com/scolmore/zerotrust/contributors
-
 [link-microsoft-setup]: https://learn.microsoft.com/en-us/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory
+[link-style]: https://github.com/scolmore/zerotrust/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain
+[link-tests]: https://github.com/scolmore/zerotrust/actions?query=workflow%3ATests+branch%3Amain

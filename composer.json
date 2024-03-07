@@ -16,7 +16,7 @@
         "illuminate/support": "~10"
     },
     "require-dev": {
-        "pestphp/pest": "^2.32",
+        "pestphp/pest": "^2.34",
         "laravel/pint": "^1.13",
         "orchestra/testbench": "^8.21"
     },
@@ -38,6 +38,11 @@
             "aliases": {
                 "ZeroTrust": "Scolmore\\ZeroTrust\\Facades\\ZeroTrust"
             }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     }
 }
